@@ -4,6 +4,8 @@ public class Bmi {
     double height;
     private double weightKG;
     private double heightM;
+    private static final double poundToKg = 0.45359237;
+    private static final double inchToM = 0.0254;
 
     public Bmi() {
         //empty constructor
@@ -12,18 +14,18 @@ public class Bmi {
     public Bmi(double weight, double height) {
         this.weight = weight;
         this.height = height;
-        this.weightKG = weight * 0.45359237;
-        this.heightM = height * 0.0254;
+        this.weightKG = weight * poundToKg;
+        this.heightM = height * inchToM;
     }
 
     public void setHeight(double height) {
         this.height = height;
-        this.heightM = height * 0.0254;
+        this.heightM = height * inchToM;
     }
 
     public void setWeight(double weight) {
         this.weight = weight;
-        this.weightKG = weight * 0.45359237;
+        this.weightKG = weight * poundToKg;
     }
 
     public double getBMI() {
