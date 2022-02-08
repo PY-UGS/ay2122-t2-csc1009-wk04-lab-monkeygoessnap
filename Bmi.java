@@ -8,7 +8,10 @@ public class Bmi {
     private static final double inchToM = 0.0254;
 
     public Bmi() {
-        //empty constructor
+        this.weight = 0;
+        this.height = 0;
+        this.weightKG = 0;
+        this.heightM = 0;
     }
 
     public Bmi(double weight, double height) {
